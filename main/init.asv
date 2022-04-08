@@ -3,5 +3,5 @@
 
 
 
-maxRange = 40; 
-minRange = -50;
+maxRange = 0; 
+minRange = -30;
