@@ -33,7 +33,7 @@ mymotor1.Speed = 0;
 
 %% plot 
 figure(1);
-plot(t,x);
+plot(t,x,'-o');
 
 % calculate delta_t
 a = x()
@@ -41,7 +41,11 @@ t_max = max(t);
 t_size = size(t);
 t_size = t_size(2);
 t_delta = t_max/t_size; 
-
+ax = gca;
+ax.FontSize = 13;
+xlabel('t[s]') 
+ylabel('alpha') 
+grid on; 
 
 title('Sprungantwort IT1-Streckenverhalten','Antrieb Wippe');
 
